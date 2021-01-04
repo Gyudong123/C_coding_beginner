@@ -33,7 +33,7 @@ Direct placement of string constants in an array is only possible if the array i
 
 The actual start address of memory is called a pointer!
 & is the address operator. Gets the starting address value of the memory to which the variable is assigned.
-* is a reference operator.
+\* is a reference operator.
 ==>Use memory space (left) *&a = *&b ; Use the value of the memory space (right)
 pointer : 4byte
 
