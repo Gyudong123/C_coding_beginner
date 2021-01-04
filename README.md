@@ -100,14 +100,14 @@ The way to verify that the stream file is finished entering the file on your har
 
 The function "fputc" outputs one character to the buffer each time it is called. When new line characters are entered in the buffer, all data is output to the hard disk file at once.
 
-The <getchar> function uses a stream file just like the <fgetc> function.
+The "getchar" function uses a stream file just like the "fgetc" function.
 
 Although the number of stream files that are opened by default to each operating system may vary, the three stream files, stdin (keyboard_standard input stream), stdout (monitor_standard output stream), and stderr (monitor_standard error stream), are commonly opened.
 
-The function <fgets> is a function that receives a string by default, but before that is entered by line. When <fgetc> no longer has data to read, it returns EOF(-1). But <fgets> returns a
+The function "fgets" is a function that receives a string by default, but before that is entered by line. When "fgetc" no longer has data to read, it returns EOF(-1). But "fgets" returns a
 null pointer.
 
-When a file pointer in an input stream file is given as a transfer factor of the function <flush>, it performs the function of deleting data in the buffer.
+When a file pointer in an input stream file is given as a transfer factor of the function "flush", it performs the function of deleting data in the buffer.
 However, in the case of the output, the data in the buffer is outputted directly to the connected device.
 
 **** Additional learning: Set encoding value in file input/output function ****
@@ -116,6 +116,6 @@ Split-compiled files are called modules.
 
 When creating all header files, it is recommended that a macro constant similar to the name of the header file be defined in the lead. If the same header file is included more than once, it will only be processed once.
 
-If you use <const> for a pointer variable, you cannot change the value of the memory space that is pointed through the pointer variable.
+If you use "const" for a pointer variable, you cannot change the value of the memory space that is pointed through the pointer variable.
 
 static int result; (Declaring external static variables) External static variables can be useful when protecting specific data because their scope of use is limited to one module.
