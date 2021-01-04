@@ -1,5 +1,4 @@
-{
-    "files.associations": {
+{   "files.associations": {
         "iostream": "cpp",
         "chrono": "cpp",
         "array": "cpp",
@@ -70,6 +69,6 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
     }
 }

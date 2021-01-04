@@ -1,14 +1,31 @@
+// Cí”„ë¡œê·¸ë˜ë° ê³µë¶€ ì˜ˆì‹œ
+
 #include <stdio.h>
+#include "test1.h"
 
-int main()
+extern char grd;
+void input_score(int *kor, int *eng, int *mat)
 {
-int age;
-char blood_type;
-printf("¸ö¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-scanf("%d", &age);
-printf("Å°´Â? : ");
-scanf("%c", blood_type);
-printf("¸ö¹« : %d, Å° : %c", age,blood_type);
-return 0;
+    printf("ì„¸ ê³¼ëª©ì˜ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+    scanf("%d%d%d", kor, eng, mat);
+}
 
+int total(int kor, int eng, int mat)
+{
+    int tot;
+
+    tot = kor + eng + mat;
+    return tot;
+}
+
+double grade(int tot)
+{
+    double avg;
+
+    avg = tot/ 3.0;
+    if (avg >= 90) grd = 'A';
+    else if (avg >= 80) grd = 'B';
+    else if (avg >= 70) grd = 'C';
+    else grd= 'F';
+    return avg;
 }
